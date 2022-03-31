@@ -1,0 +1,198 @@
+body{    
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;    
+}
+
+.fullNav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* background-color: #6b5050; */
+}
+
+.containerNav{    
+    width: 1280px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 0 32px;
+    /* background-color: rgb(224, 236, 236);  */
+}
+
+.containerLogo{
+    width: 148px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;   
+}
+
+.containerMenu{
+    width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    padding-left: 82px;   
+}
+
+.containerBotoes{
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;       
+}
+
+ul li{
+    display: inline; 
+    padding-left: 20px;   
+}
+
+ul li a{
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px; 
+    color: #667085;
+}
+
+.BtnEntrar{
+    width: 83px;
+    height: 44px;
+    background-color: transparent;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+}
+
+.BtnCadastrar{
+    width: 112px;
+    height: 44px;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    background: #8E2424;
+    border: 1px solid #8E2424;    
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    padding: 10px 18px;
+}
+
+.containerFullHero{
+    width: 100%;
+    height: 407px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;   
+    flex-direction: column;     
+}
+
+.containerHero{
+    width: 1280px;
+    height: 407px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;    
+    padding: 0 32px;    
+}
+
+.containerHero span{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8E2424;
+}
+
+.containerHero h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.02em;
+    color: #101828;
+}
+
+.containerHero p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.containerFull{
+    width: 100%;
+    height: 288px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;   
+    flex-direction: row;      
+}
+
+.container{
+    width: 1280px;
+    height: 192px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: flex-start;  
+    padding: 0 32px;    
+    
+}
+
+.container .campo{
+    width: 280px;
+    height: 192px;   
+    padding: 0 15px; 
+}
+
+.container h1{
+    width: 280px;
+    height: 72px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    color: #8E2424;   
+    margin: 0; 
+}
+
+.container span{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #101828;
+}
+
+.container p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+}
