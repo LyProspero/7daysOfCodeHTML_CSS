@@ -1,11 +1,17 @@
-body{    
+body {
     width: 100vw;
     height: 100vh;
     padding: 0;
-    margin: 0;    
+    margin: 0;
 }
 
-.fullNav{
+:root {
+    --text-color: #667085;
+    --main-color: #8E2424;
+}
+
+
+.fullNav {
     width: 100%;
     height: 80px;
     display: flex;
@@ -15,55 +21,55 @@ body{
     /* background-color: #6b5050; */
 }
 
-.containerNav{    
+.containerNav {
     width: 1280px;
     height: 44px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
     padding: 0 32px;
     /* background-color: rgb(224, 236, 236);  */
 }
 
-.containerLogo{
+.containerLogo {
     width: 148px;
     display: flex;
     justify-content: flex-start;
-    align-items: center;   
+    align-items: center;
 }
 
-.containerMenu{
+.containerMenu {
     width: 650px;
     display: flex;
     justify-content: flex-start;
-    align-items: center; 
-    padding-left: 82px;   
+    align-items: center;
+    padding-left: 82px;
 }
 
-.containerBotoes{
+.containerBotoes {
     width: 300px;
     display: flex;
     justify-content: flex-end;
-    align-items: center;       
+    align-items: center;
 }
 
-ul li{
-    display: inline; 
-    padding-left: 20px;   
+ul li {
+    display: inline;
+    padding-left: 20px;
 }
 
-ul li a{
+ul li a {
     text-decoration: none;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px; 
-    color: #667085;
+    line-height: 24px;
+    color: var(--text-color);
 }
 
-.BtnEntrar{
+.BtnEntrar {
     width: 83px;
     height: 44px;
     background-color: transparent;
@@ -73,10 +79,10 @@ ul li a{
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #667085;
+    color: var(--text-color);
 }
 
-.BtnCadastrar{
+.BtnCadastrar {
     width: 112px;
     height: 44px;
     border-radius: 8px;
@@ -86,42 +92,42 @@ ul li a{
     font-size: 16px;
     line-height: 24px;
     color: #ffffff;
-    background: #8E2424;
-    border: 1px solid #8E2424;    
+    background: var(--main-color);
+    border: 1px solid color var(--main-color);
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
     border-radius: 8px;
     padding: 10px 18px;
 }
 
-.containerFullHero{
+.containerFullHero {
     width: 100%;
     height: 407px;
     display: flex;
     justify-content: flex-start;
-    align-items: center;   
-    flex-direction: column;     
+    align-items: center;
+    flex-direction: column;
 }
 
-.containerHero{
+.containerHero {
     width: 1280px;
     height: 407px;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
-    align-items: center;    
-    padding: 0 32px;    
+    align-items: center;
+    padding: 0 32px;
 }
 
-.containerHero span{
+.containerHero span {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    color: #8E2424;
+    color: var(--main-color);
 }
 
-.containerHero h1{
+.containerHero h1 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -131,7 +137,7 @@ ul li a{
     color: #101828;
 }
 
-.containerHero p{
+.containerHero p {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -140,33 +146,33 @@ ul li a{
     text-align: center;
 }
 
-.containerFull{
+.containerFull {
     width: 100%;
     height: 288px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;   
-    flex-direction: row;      
+    align-items: flex-start;
+    flex-direction: row;
 }
 
-.container{
+.container {
     width: 1280px;
     height: 192px;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: center;
-    align-items: flex-start;  
-    padding: 0 32px;    
-    
+    align-items: flex-start;
+    padding: 0 32px;
+
 }
 
-.container .campo{
+.container .campo {
     width: 280px;
-    height: 192px;   
-    padding: 0 15px; 
+    height: 192px;
+    padding: 0 15px;
 }
 
-.container h1{
+.container h1 {
     width: 280px;
     height: 72px;
     font-family: 'Inter';
@@ -175,11 +181,11 @@ ul li a{
     font-size: 60px;
     line-height: 72px;
     letter-spacing: -0.02em;
-    color: #8E2424;   
-    margin: 0; 
+    color: var(--main-color);
+    margin: 0;
 }
 
-.container span{
+.container span {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -188,11 +194,11 @@ ul li a{
     color: #101828;
 }
 
-.container p{
+.container p {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #667085;
+    color: var(--text-color);
 }
