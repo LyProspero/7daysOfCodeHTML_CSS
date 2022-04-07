@@ -209,18 +209,18 @@ ul li a {
     color: var(--text-color);
 }
 
-.containerFullVagas {
+.containerFullBannerVagas {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 96px 0;
+    padding: 48px 0 20px 0;
     /* background-color: #000000; */
 }
 
-.containerVagas {
+.containerBannerVagas {
     width: 1216px;
     height: auto;
     display: flex;
@@ -239,7 +239,7 @@ ul li a {
     padding: 30px 0;
 }
 
-.containerVagas span {
+.containerBannerVagas span {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -252,7 +252,7 @@ ul li a {
     border-radius: 25px;
 }
 
-.containerVagas h2 {
+.containerBannerVagas h2 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -263,7 +263,7 @@ ul li a {
     color: #101828;
 }
 
-.containerVagas p {
+.containerBannerVagas p {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -271,4 +271,67 @@ ul li a {
     line-height: 30px;
     text-align: center;
     color: var(--text-color)
+}
+
+.containerFullVagas {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #d2cb80; */
+}
+
+.secaoVagas {
+    width: 1240px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: rgb(255, 255, 255); */
+}
+
+.tituloSecao {
+    width: 768px;
+    height: auto;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #101828;
+    text-align: start;
+    margin: 50px 0 20px;
+}
+
+.vaga {
+    width: 768px;
+    height: 136px;
+    border: 1px solid #EAECF0;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin: 12px 0;
+    padding: 24px;
+}
+
+.titulo-vaga {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #101828;
+    display: inline-block;
+    margin: 0 0 24px 0;
+}
+
+.informacoes span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
 }
