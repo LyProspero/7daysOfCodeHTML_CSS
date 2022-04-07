@@ -3,6 +3,8 @@ html {
     height: 100vh;
     padding: 0;
     margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
 }
 
 body {
@@ -16,6 +18,7 @@ body {
 :root {
     --text-color: #667085;
     --main-color: #8E2424;
+    --title-color: #101828;
 }
 
 .fullNav {
@@ -25,18 +28,16 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    /* background-color: #6b5050; */
 }
 
 .containerNav {
-    width: 1240px;
+    width: 1216px;
     height: 44px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 32px;
-    /* background-color: rgb(224, 236, 236);  */
 }
 
 .containerLogo {
@@ -68,8 +69,6 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -81,8 +80,6 @@ ul li a {
     height: 44px;
     background-color: transparent;
     border: none;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -93,13 +90,11 @@ ul li a {
     width: 112px;
     height: 44px;
     border-radius: 8px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     color: #ffffff;
-    background: var(--main-color);
+    background-color: var(--main-color);
     border: 1px solid color var(--main-color);
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
     border-radius: 8px;
@@ -116,7 +111,7 @@ ul li a {
 }
 
 .containerHero {
-    width: 1240px;
+    width: 1216px;
     height: 407px;
     display: flex;
     flex-direction: column;
@@ -126,8 +121,6 @@ ul li a {
 }
 
 .containerHero span {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -135,18 +128,14 @@ ul li a {
 }
 
 .containerHero h1 {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-size: 48px;
     line-height: 60px;
     letter-spacing: -0.02em;
-    color: #101828;
+    color: var(--title-color);
 }
 
 .containerHero p {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
@@ -163,7 +152,7 @@ ul li a {
 }
 
 .container {
-    width: 1240px;
+    width: 1216px;
     height: 192px;
     display: flex;
     flex-direction: row;
@@ -181,8 +170,6 @@ ul li a {
 .container h1 {
     width: 280px;
     height: 72px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-size: 60px;
     line-height: 72px;
@@ -192,17 +179,13 @@ ul li a {
 }
 
 .container span {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
-    color: #101828;
+    color: var(--title-color);
 }
 
 .container p {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -217,7 +200,6 @@ ul li a {
     align-items: center;
     flex-direction: column;
     padding: 48px 0 20px 0;
-    /* background-color: #000000; */
 }
 
 .containerBannerVagas {
@@ -227,7 +209,6 @@ ul li a {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    /* background-color: rgb(43, 152, 152); */
 }
 
 .image {
@@ -240,8 +221,6 @@ ul li a {
 }
 
 .containerBannerVagas span {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
@@ -253,19 +232,15 @@ ul li a {
 }
 
 .containerBannerVagas h2 {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-size: 36px;
     line-height: 44px;
     text-align: center;
     letter-spacing: -0.02em;
-    color: #101828;
+    color: var(--title-color);
 }
 
 .containerBannerVagas p {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
@@ -280,28 +255,24 @@ ul li a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* background-color: #d2cb80; */
 }
 
 .secaoVagas {
-    width: 1240px;
+    width: 1216px;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    /* background-color: rgb(255, 255, 255); */
 }
 
 .tituloSecao {
     width: 768px;
     height: auto;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    color: #101828;
+    color: var(--title-color);
     text-align: start;
     margin: 50px 0 20px;
 }
@@ -317,21 +288,63 @@ ul li a {
 }
 
 .titulo-vaga {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
-    color: #101828;
+    color: var(--title-color);
     display: inline-block;
     margin: 0 0 24px 0;
 }
 
 .informacoes span {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     color: #667085;
+}
+
+.containerFullDepoimentos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 96px 0 20px 0;
+}
+
+.containerDepoimentos {
+    width: 1216px;
+    height: 404px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(196, 25, 25, 0.03);
+    border-radius: 16px;
+}
+
+.containerDepoimentos span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--title-color);
+    margin-top: 16px;
+}
+
+.containerDepoimentos h1 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: var(--title-color);
+}
+
+.containerDepoimentos p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--text-color);
 }
