@@ -13,6 +13,10 @@ body {
     padding: 0;
     margin: 0;
     overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
 :root {
@@ -21,18 +25,20 @@ body {
     --title-color: #101828;
 }
 
-.fullNav {
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+.container {
+    width: 1216px;
+    height: auto;
+    padding: 0 32px;
+    display: inline-block;
+    margin-bottom: 80px;
 }
 
-.containerNav {
-    width: 1216px;
-    height: 44px;
+.container.full {
+    width: 100%;
+    height: auto;
+}
+
+.navegation {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -41,23 +47,17 @@ body {
 }
 
 .containerLogo {
-    width: 148px;
-    display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
 .containerMenu {
-    width: 650px;
-    display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-left: 82px;
 }
 
 .containerBotoes {
-    width: 300px;
-    display: flex;
     justify-content: flex-end;
     align-items: center;
 }
@@ -75,7 +75,7 @@ ul li a {
     color: var(--text-color);
 }
 
-.BtnEntrar {
+.btnEntrar {
     width: 83px;
     height: 44px;
     background-color: transparent;
@@ -86,7 +86,7 @@ ul li a {
     color: var(--text-color);
 }
 
-.BtnCadastrar {
+.btnCadastrar {
     width: 112px;
     height: 44px;
     border-radius: 8px;
@@ -101,59 +101,39 @@ ul li a {
     padding: 10px 18px;
 }
 
-.containerFullHero {
-    width: 100%;
-    height: 407px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-}
-
-.containerHero {
-    width: 1216px;
-    height: 407px;
+.hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 32px;
+    padding: 30px 30px;
 }
 
-.containerHero span {
+.hero span {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     color: var(--main-color);
 }
 
-.containerHero h1 {
+.hero h1 {
     font-weight: 600;
     font-size: 48px;
+    text-align: center;
     line-height: 60px;
     letter-spacing: -0.02em;
     color: var(--title-color);
 }
 
-.containerHero p {
+.hero p {
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     text-align: center;
+    color: var(--text-color);
 }
 
-.containerFull {
-    width: 100%;
-    height: 288px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
-}
-
-.container {
-    width: 1216px;
-    height: 192px;
+.vantagens {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -161,13 +141,13 @@ ul li a {
     padding: 0 32px;
 }
 
-.container .campo {
+.vantagens .campo {
     width: 280px;
     height: 192px;
     padding: 0 15px;
 }
 
-.container h1 {
+.vantagens h1 {
     width: 280px;
     height: 72px;
     font-weight: 600;
@@ -178,49 +158,29 @@ ul li a {
     margin: 0;
 }
 
-.container span {
+.vantagens span {
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
     color: var(--title-color);
 }
 
-.container p {
+.vantagens p {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: var(--text-color);
 }
 
-.containerFullBannerVagas {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 48px 0 20px 0;
-}
-
-.containerBannerVagas {
-    width: 1216px;
-    height: auto;
+.banner {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding: 30px 32px;
 }
 
-.image {
-    width: 1216px;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 0;
-}
-
-.containerBannerVagas span {
+.banner span {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
@@ -231,7 +191,7 @@ ul li a {
     border-radius: 25px;
 }
 
-.containerBannerVagas h2 {
+.banner h2 {
     font-weight: 600;
     font-size: 36px;
     line-height: 44px;
@@ -240,7 +200,7 @@ ul li a {
     color: var(--title-color);
 }
 
-.containerBannerVagas p {
+.banner p {
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
@@ -248,25 +208,21 @@ ul li a {
     color: var(--text-color)
 }
 
-.containerFullVagas {
-    width: 100%;
-    height: auto;
+.image {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    padding: 30px 0;
 }
 
-.secaoVagas {
-    width: 1216px;
-    height: auto;
+.vagas {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 
-.tituloSecao {
+.vagas .tituloSecao {
     width: 768px;
     height: auto;
     font-weight: 500;
@@ -277,7 +233,7 @@ ul li a {
     margin: 50px 0 20px;
 }
 
-.vaga {
+.vagas .vaga {
     width: 768px;
     height: 136px;
     border: 1px solid #EAECF0;
@@ -287,7 +243,7 @@ ul li a {
     padding: 24px;
 }
 
-.titulo-vaga {
+.vagas .vaga .tituloVaga {
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
@@ -296,26 +252,15 @@ ul li a {
     margin: 0 0 24px 0;
 }
 
-.informacoes span {
+.vagas .vaga .informacoes span {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     color: #667085;
 }
 
-.containerFullDepoimentos {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 96px 0 20px 0;
-}
+.depoimentos {
 
-.containerDepoimentos {
-    width: 1216px;
-    height: 404px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -324,15 +269,15 @@ ul li a {
     border-radius: 16px;
 }
 
-.containerDepoimentos span {
+.depoimentos span {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: var(--title-color);
+    color: var(--main-color);
     margin-top: 16px;
 }
 
-.containerDepoimentos h1 {
+.depoimentos h1 {
     font-weight: 500;
     font-size: 36px;
     line-height: 44px;
@@ -341,10 +286,72 @@ ul li a {
     color: var(--title-color);
 }
 
-.containerDepoimentos p {
+.depoimentos p {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     text-align: center;
     color: var(--text-color);
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9FAFB;
+    padding: 50px;
+}
+
+.rodape h1 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    color: var(--title-color);
+}
+
+.rodape p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--text-color);
+}
+
+.rodape span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #98A2B3;
+}
+
+.email {
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+.campoEmail {
+    width: 360px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    padding-left: 16px;
+}
+
+.email button {
+    width: 116px;
+    height: 48px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    margin-left: 16px;
 }
